@@ -10,7 +10,7 @@
 //! FUNZIONE COSTRUTTORE
 //!METODI/COMPORTAMENTI
 // }
-//! definito una classe
+
 
 //? ACCESS MODIFIER - modificatore di accesso,dice dove un attributo o un metodo é visibile
 //PUBLIC - ACCESSIBILE IN LETTURA E SCRITTURA OVUNQUE NELL'ALGORITMO 
@@ -21,6 +21,7 @@
 // PRIVATE - come protected MA NON EREDITATO DALLE CLASSI FIGLIE
 
 // attributi/metodi STATICI - FANNO RIFERIMENTO ALLA CLASSE
+//! definizione di una classe
 class Animal
 {
     //! ATTRIBUTI/PROPRIETA'
@@ -73,22 +74,15 @@ class Animal
 //! CREATO GLI OGGETTI
 $dylan = new Animal('cane', 'Dylan', 15);
 // $dylan->name = 'Genoveffo';
+// echo $dylan->name;
+
 $dylan->setName('Pippo');
 $dylan->printName();
 
 $micia = new Animal('gatto', 'Micia', 19);
 
 
-//var_dump($dylan);
-
 $babi = new Animal('cane', 'Babi', 6);
-Animal::$counter . " \n";
-
-//var_dump($babi);
-// $babi->info();
-// $dylan->info();
-
-// echo $dylan->name;
 
 //! EREDITARIETA - possibilita di una classe di ereditare da un'altra tutti gli attributi e i metodi, per estenderla e specificarla
 
@@ -154,4 +148,3 @@ var_dump($leone);
 // echo Animal::$counter;
 // echo "numero di animali selvatici: " . Wild::$counter . "\n";
 
-echo $leone->age;
